@@ -1,4 +1,4 @@
-# Partially Deobfuscated Worlde Source Code
+# Partially Deobfuscated Wordle Source Code
 
 ## Findings:
 - this was most likely written in es6, which was then targetted to es5, shown through the lack of `const`, `let`, and `class` keywords
