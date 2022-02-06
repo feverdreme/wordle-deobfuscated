@@ -1,9 +1,9 @@
-# Partially Deobfuscated World Source Code
+# Partially Deobfuscated Worlde Source Code
 
 ## Findings:
 - this was most likely written in es6, which was then targetted to es5, shown through the lack of `const`, `let`, and `class` keywords
 - `window.hash` is a hash to verify that hte javascript bundle the correct version, and is probably used in case Cache-Control goes wonky or anything, however I cannot determine where the validation logic is
-- the wordle evalutation function for a row is not a function in the globaL scope, but is defined by manually adding a string key to an object and then assigned with an anon func
+- the wordle evalutation function for a row is not a function in the global scope, but is defined by manually adding a string key to an object and then assigned with an anon func
 - `e` is usually an object
 - `a` is usually an object property name
 - `window.localStorage.gameState` and `window.localStorage.statistics` are where the info is stored for sols, current board states, progress, streaks, etc.
